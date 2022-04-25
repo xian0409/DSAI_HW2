@@ -98,16 +98,16 @@ class Predict():
         
         return [value[0] for value in predicted_value.tolist()]
 
-    # test and predict figure
-    def figure_output(self, test_data, predict_data):
-        plt.figure(figsize=(10, 5))
-        plt.plot(test_data,'red', label = 'Real Prices')
-        plt.plot(predict_data, 'blue', label = 'Predicted Prices')
-        plt.xlabel('Time')
-        plt.ylabel('Prices')
-        plt.title('Real vs Predicted Prices')
-        plt.legend(loc = 'best', fontsize = 20)
-        plt.show()
+    # test and predict figure，以下程式碼取消註解可以取得比較圖
+    # def figure_output(self, test_data, predict_data):
+    #     plt.figure(figsize=(10, 5))
+    #     plt.plot(test_data,'red', label = 'Real Prices')
+    #     plt.plot(predict_data, 'blue', label = 'Predicted Prices')
+    #     plt.xlabel('Time')
+    #     plt.ylabel('Prices')
+    #     plt.title('Real vs Predicted Prices')
+    #     plt.legend(loc = 'best', fontsize = 20)
+    #     plt.show()
 
     def get_status(self, status):
         return {
