@@ -94,7 +94,7 @@ class Predict():
         
         # evaluate
         print(mean_squared_error(test_open, predicted_value, squared = False))
-        self.figure_output(test_data = test_open, predict_data = predicted_value)
+        # self.figure_output(test_data = test_open, predict_data = predicted_value)
         
         return [value[0] for value in predicted_value.tolist()]
 
