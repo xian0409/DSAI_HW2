@@ -3,3 +3,4 @@
 
 ## 第一次實驗
 預測值與實際值的比較
+![image](https://user-images.githubusercontent.com/55480057/165135970-198e9892-d311-4e59-b226-2351c5a8c02c.png)
