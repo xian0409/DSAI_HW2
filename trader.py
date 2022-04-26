@@ -42,6 +42,7 @@ class Predict():
     def preprocessData(self):
         #擷取Open欄位的data
         train_open = self.train_data.iloc[:, 0:1].values
+        # print(train_open)
 
         #正規化
         train_open_scaled = self.scaler.fit_transform(train_open)
@@ -82,7 +83,7 @@ class Predict():
 
     def predictModel(self):
         # testing data ready
-        test_open = self.test_data.iloc[:, 0:1].values #taking  open price
+        test_open = self.test_data.iloc[:, 0:1].values #taking open price
         total = pd.concat([self.train_data['Open'], self.test_data['Open']], axis=0)
         locus = len(total) - len(self.test_data) - 1
         test_input = self.scaler.transform(total[locus:].values.reshape(-1,1))
